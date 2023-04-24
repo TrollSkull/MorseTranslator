@@ -14,7 +14,7 @@ $ apt install -y git python
 
 $ git clone https://github.com/TrollSkull/MorseTranslator
 
-$ cd SMSBOX
+$ cd MorseTranslator
     
 $ pip install -r requirements.txt
 
