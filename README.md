@@ -18,4 +18,4 @@ $ cd MorseTranslator
     
 $ pip install -r requirements.txt
 
-$ python translator.py
+$ python translator.py or python translator.py [your text here]
