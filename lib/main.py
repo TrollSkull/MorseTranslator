@@ -23,21 +23,25 @@ args = parser.parse_args()
 class Main:
     if args.text:
         print(MorseEncrypt(args.text))
-
-    while True:
-        Banner()
-        option = str(input("\nTranslator " + Colors.OK + "~# " + Colors.RESET))
-
-        if option == "/update":
-            CheckVersion()
-
-        elif option == "/exit":
-            sys.exit(0)
         
-        else:
-            print(MorseEncrypt(option))
-        
+    try:
+        while True:
+            Banner()
+            option = str(input("\nTranslator " + Colors.OK + "~# " + Colors.RESET))
 
+            if option == "/update":
+                CheckVersion()
+
+            elif option == "/exit":
+                sys.exit(0)
+
+            else:
+                print(MorseEncrypt(option))
+                
+    except KeyboardInterrupt:
+            print(Colors.WARNING + "\n[CTRL-C] " + Colors.RESET + "Keyboard interrupt detected, exiting.")
+            sys.exit(1)
+        
 def main():
     try:
         translator = Main()
