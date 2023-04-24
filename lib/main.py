@@ -39,7 +39,7 @@ class Main:
                 print(MorseEncrypt(option))
                 
     except KeyboardInterrupt:
-            print(Colors.WARNING + "\n[CTRL-C] " + Colors.RESET + "Keyboard interrupt detected, exiting.")
+            print(Colors.WARNING + "\n[Translator] " + Colors.RESET + "Keyboard interrupt detected, exiting.")
             sys.exit(1)
         
 def main():
