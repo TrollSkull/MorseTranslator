@@ -1,5 +1,5 @@
 <p align="left">
-<img src="/.assets/logo.png" width="1000" height="150"/>
+<img src="/.assets/logo.png" width="900" height="130\>
 
   [![Version](https://img.shields.io/badge/Version-2.0-green)]()
   [![Bash](https://img.shields.io/badge/Made%20with-Python-blue)]()
