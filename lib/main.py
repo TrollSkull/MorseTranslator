@@ -14,9 +14,10 @@ except ImportError as error:
     pass
 
 parser = argparse.ArgumentParser(description='Morse translator v1.0 by TrollSkull',
-                                 usage="translator.py [your text here] or just python translator.py")
+                                 usage="translator.py -t [your text here] or just python translator.py")
 
-parser.add_argument('text', help='your text here.')
+parser.add_argument('--text', '-t', type=str, required=False,
+                    help='you can put morse code here or normal letters.')
 
 args = parser.parse_args()
 
