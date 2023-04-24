@@ -16,7 +16,5 @@ $ apt install -y git python
 $ git clone https://github.com/TrollSkull/MorseTranslator
 
 $ cd MorseTranslator
-    
-$ pip install -r requirements.txt
 
-$ python translator.py or python translator.py [your text here]
+$ python translator.py or python translator.py -t [your text here]
