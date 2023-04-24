@@ -14,7 +14,7 @@ except ImportError as error:
     pass
 
 parser = argparse.ArgumentParser(description='Morse translator v1.0 by TrollSkull',
-                                 usage="translator.py -t [your text here] or just python translator.py")
+                                 usage="translator.py [your text here] or just python translator.py")
 
 parser.add_argument('--text', '-t', type=str, required=False,
                     help='you can put morse code here or normal letters.')
@@ -24,10 +24,11 @@ args = parser.parse_args()
 class Main:
     if args.text:
         print(MorseEncrypt(args.text))
-        
+        sys.exit(0)
+
+    Banner()
     try:
         while True:
-            Banner()
             option = str(input("\nTranslator " + Colors.OK + "~# " + Colors.RESET))
 
             if option == "/update":
@@ -35,14 +36,14 @@ class Main:
 
             elif option == "/exit":
                 sys.exit(0)
-
+            
             else:
                 print(MorseEncrypt(option))
-                
+
     except KeyboardInterrupt:
             print(Colors.WARNING + "\n[Translator] " + Colors.RESET + "Keyboard interrupt detected, exiting.")
-            sys.exit(1)
-        
+            sys.exit(1)   
+
 def main():
     try:
         translator = Main()

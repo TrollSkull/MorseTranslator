@@ -23,9 +23,11 @@ def MorseEncrypt(text):
     decrypt = {var: key for key, var in encrypt.items()}
 
     if '-' in text:
+        print(Colors.CYAN + "Morse > Letters:" + Colors.RESET)
         return ''.join(decrypt[i] for i in text.split())
     else:
-        return ''.join(encrypt[i] for i in text.upper() if i.isalpha())
+        print(Colors.CYAN + "Letters > Morse:" + Colors.RESET)
+        return ' '.join(encrypt[i] for i in text.upper() if i.isalpha())
 
 def CheckOSClear():
     if sys.platform == "win32":
@@ -51,4 +53,5 @@ def Banner():
     
     print("____________________________________________ \n")
     print("           Created by " + Colors.OK + "@TrollSkull \n" + Colors.RESET)
-    print(Colors.GRAY + '[INFO] Type "show options" to show command. \n' + Colors.RESET)
+    print(Colors.GRAY + '[INFO] Type "/update" to update the script.' + Colors.RESET)
+    print(Colors.GRAY + '[INFO] Type "/exit" to close the script.' + Colors.RESET)
