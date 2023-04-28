@@ -25,7 +25,8 @@ class Main:
     if args.text:
         print(MorseEncrypt(args.text))
         sys.exit(0)
-
+    
+    CheckOSClear()
     Banner()
     try:
         while True:
