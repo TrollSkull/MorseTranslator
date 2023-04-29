@@ -23,7 +23,7 @@ args = parser.parse_args()
 
 class Main:
     if args.text:
-        print(Colors.CYAN + "MorseTranslator v1.1" + Colors.RESET)
+        print(Colors.CYAN + "MorseTranslator v1.1\n" + Colors.RESET)
         print(MorseEncrypt(args.text))
         sys.exit(0)
     
