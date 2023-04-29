@@ -23,6 +23,7 @@ args = parser.parse_args()
 
 class Main:
     if args.text:
+        print(Colors.CYAN + "MorseTranslator v1.1" + Colors.RESET)
         print(MorseEncrypt(args.text))
         sys.exit(0)
     
@@ -30,7 +31,7 @@ class Main:
     Banner()
     try:
         while True:
-            option = str(input("\nTranslator " + Colors.OK + "~# " + Colors.RESET))
+            option = str(input("\nTranslator " + Colors.CYAN + "~# " + Colors.RESET))
 
             if option == "/update":
                 CheckVersion()
