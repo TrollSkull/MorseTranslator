@@ -52,6 +52,6 @@ def Banner():
    """ + Colors.RESET)
     
     print("____________________________________________ \n")
-    print("           Created by " + Colors.OK + "@TrollSkull \n" + Colors.RESET)
+    print("           Created by " + Colors.CYAN + "@TrollSkull \n" + Colors.RESET)
     print(Colors.GRAY + '[INFO] Type "/update" to update the script.' + Colors.RESET)
     print(Colors.GRAY + '[INFO] Type "/exit" to close the script.' + Colors.RESET)
