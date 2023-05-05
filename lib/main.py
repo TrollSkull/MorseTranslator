@@ -1,6 +1,5 @@
 try:
-    import time, sys, os
-    import argparse
+    import argparse, time, sys, os
 
     from lib.core.utils import (
         CheckOSClear, Colors,
@@ -23,15 +22,15 @@ args = parser.parse_args()
 
 class Main:
     if args.text:
-        print(Colors.CYAN + "MorseTranslator v1.1\n" + Colors.RESET)
         print(MorseEncrypt(args.text))
         sys.exit(0)
-    
+
     CheckOSClear()
     Banner()
+    
     try:
         while True:
-            option = str(input("\nTranslator " + Colors.CYAN + "~# " + Colors.RESET))
+            option = str(input("\nTranslator " + Colors.OK + "~# " + Colors.RESET))
 
             if option == "/update":
                 CheckVersion()

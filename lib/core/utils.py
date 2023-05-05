@@ -22,11 +22,28 @@ def MorseEncrypt(text):
             
     decrypt = {var: key for key, var in encrypt.items()}
 
-    if '-' in text:
+    is_morse = '-' in text or '.' in text
+
+    if is_morse:
+
         print(Colors.CYAN + "Morse > Letters:" + Colors.RESET)
+
+        for letter in text.split():
+            if letter not in decrypt:
+
+                print(Colors.FAIL + "[Translator] " + Colors.RESET + "is not a valid Morse code letter.")
+                sys.exit(1)
+            
         return ''.join(decrypt[i] for i in text.split())
+    
     else:
+
         print(Colors.CYAN + "Letters > Morse:" + Colors.RESET)
+        if not all(c.isalpha() or c.isspace() for c in text):
+
+            print(Colors.FAIL + "[Translator] " + Colors.RESET + "Error: Only letters and spaces can be encrypted in Morse code.")
+            sys.exit(1)
+        
         return ' '.join(encrypt[i] for i in text.upper() if i.isalpha())
 
 def CheckOSClear():
@@ -52,6 +69,6 @@ def Banner():
    """ + Colors.RESET)
     
     print("____________________________________________ \n")
-    print("           Created by " + Colors.CYAN + "@TrollSkull \n" + Colors.RESET)
+    print("           Created by " + Colors.OK + "@TrollSkull \n" + Colors.RESET)
     print(Colors.GRAY + '[INFO] Type "/update" to update the script.' + Colors.RESET)
     print(Colors.GRAY + '[INFO] Type "/exit" to close the script.' + Colors.RESET)
