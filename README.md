@@ -2,7 +2,7 @@
 
 # MorseTranslator
 
-  [![Version](https://img.shields.io/badge/Version-2.0-green)]()
+  [![Version](https://img.shields.io/badge/Version-2.1-green)]()
   [![Bash](https://img.shields.io/badge/Made%20with-Python-blue)]()
   [![License](https://img.shields.io/badge/License-MIT-yellow)]()
 
