@@ -19,6 +19,7 @@ $ git clone https://github.com/TrollSkull/MorseTranslator
 $ cd MorseTranslator
 
 $ python translator.py or python translator.py -t [your text here]
+```
 
 ## USAGE
 
