@@ -19,3 +19,17 @@ $ git clone https://github.com/TrollSkull/MorseTranslator
 $ cd MorseTranslator
 
 $ python translator.py or python translator.py -t [your text here]
+
+## USAGE
+
+To get a list of all options use the `--help` command.
+
+    Usage: python translator.py [your text here] or [-t --text]
+
+        -t, --text              Translate text
+
+    Report bugs to (t.me/TrollSkull)
+    
+### LICENCE
+
+**[MIT License © MorseTranslator](https://github.com/TrollSkull/MorseTranslator/blob/main/LICENSE)**
