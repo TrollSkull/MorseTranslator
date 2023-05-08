@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 __author__ = 'TrollSkull'
-__version__= 'v2.0'
+__version__= 'v2.1'
 
 try:
     import requests
